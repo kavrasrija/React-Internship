@@ -34,6 +34,9 @@ const MainContentData = ({
         .then((response) => response.json())
         .then((data) => setPatientConditionData(data))
         .catch((error) => console.error("Error fetching patient data:", error));
+
+      // Reset submitted data when patient changes
+      setSubmittedData([]);
     }
   }, [selectedPatient]);
 
