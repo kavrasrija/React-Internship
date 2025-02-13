@@ -415,11 +415,11 @@ const Dashboard = () => {
                               resizableColumns
                               className="doctor-datatable"
                               scrollable
-                              scrollHeight="400px" // Enables vertical scrolling
+                              scrollHeight="700px" // Enables vertical scrolling
                               sortMode="multiple"
                               globalFilterFields={selectedColumns}
                               style={{
-                                fontSize: "14px",
+                                fontSize: "4px",
                                 maxHeight: "500px", // Ensures table height is limited
                                 overflow: "auto",
                               }}
@@ -465,7 +465,7 @@ const Dashboard = () => {
                                         style={{
                                           whiteSpace: "normal",
                                           textAlign: "left",
-                                          fontSize: "14px",
+                                          fontSize: "12px",
                                           ...getCellStyle(
                                             columnName,
                                             rowData[columnName]
